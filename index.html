@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div class="container">
     <div class="content">
-        <h1>Ice Cream Shoppe</h1>
+        <h1>Pizzeria</h1>
         <form>
             <div class="row">
                 <div>
@@ -20,79 +20,114 @@
                     <input id="lastname" name="last_name" type="text">
                 </div>
             </div>
-            <div>
+            <div class="row">
+                <div>
+                    <label for="address">Address</label>
+                    <input id="address" name="add" type="text">
+                </div>
+                <div>
+                    <label for="phonenumber">Phone Number</label>
+                    <input id="phonenumber" name="phone_number" type="text">
+                </div>
+            </div>
+
                 <div class="row">
                     <fieldset>
-                        <legend>Flavor:</legend>
+                        <legend>Crust Type:</legend>
                         <div>
-                            <input type="radio" id="vanilla" name="icecream">
-                            <label for="vanilla">Vanilla</label>
+                            <input type="radio" id="deepdish" name="crust">
+                            <label for="deepdish">Deep Dish</label>
                         </div>
 
                         <div>
-                            <input type="radio" id="strawberry" name="icecream">
-                            <label for="strawberry">Strawberry</label>
+                            <input type="radio" id="cheese stuffed" name="crust">
+                            <label for="cheese stuffed">Cheese Stuffed</label>
                         </div>
 
                         <div>
-                            <input type="radio" id="chocolate" name="icecream">
-                            <label for="chocolate">Chocolate</label>
+                            <input type="radio" id="flatbread" name="crust">
+                            <label for="flatbread">Flatbread</label>
                         </div>
                     </fieldset>
                 </div>
-                <div>
+
                     <div class="row">
                         <fieldset>
-                            <legend>Size:</legend>
+                            <legend>Sauce:</legend>
                             <div>
-                                <input type="radio" id="small" name="size">
-                                <label for="small">Small</label>
+                                <input type="radio" id="alfredo" name="sauce">
+                                <label for="alfredo">Alfredo</label>
                             </div>
                             <div>
-                                <input type="radio" id="medium" name="size">
-                                <label for="medium">Medium</label>
+                                <input type="radio" id="red" name="sauce">
+                                <label for="red">Red</label>
                             </div>
                             <div>
-                                <input type="radio" id="large" name="size">
-                                <label for="large">Large</label>
+                                <input type="radio" id="pesto" name="sauce">
+                                <label for="pesto">Pesto</label>
                             </div>
                         </fieldset>
                     </div>
-                    <div>
-                        <div class="row">
-                            <fieldset>
-                                <legend>Toppings:</legend>
+                    <div class="row">
+                        <fieldset>
+                            <legend>Toppings:</legend>
+                            <div>
+                                <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                                <label for="cheese">Cheese</label>
                                 <div>
-                                    <input type="checkbox" id="sprinkles" name="sprinkles" value="sprinkles">
-                                    <label for="sprinkles">Sprinkles</label>
-                                    <div>
-                                        <input type="checkbox" id="whippedCream" name="whippedCream" value="whippedCream">
-                                        <label for="whippedCream">Whipped Cream</label>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="caramel" name="caramel" value="caramel">
-                                        <label for="caramel">Caramel Sauce</label>
-                                    </div>
-                            </fieldset>
-                        </div>
+                                    <input type="checkbox" id="pepperoni" name="pepperoni"
+                                           value="pepperoni">
+                                    <label for="pepperoni">Pepperoni</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="anchovies" name="anchovies" value="anchovies">
+                                    <label for="anchovies">Anchovies</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="olives" name="olives" value="olives">
+                                    <label for="olives">Olives</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="sausage" name="sausage" value="sausage">
+                                    <label for="sausage">Sausage</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <fieldset>
+                        <legend>Side Dishes:</legend>
                         <div>
-                            <fieldset>
-                                <legend>Cup or Cone:</legend>
-                                <label for="container">Please Choose One</label>
-                                <select name="container" id="container">
-                                    <option value="cup">Plastic Cup</option>
-                                    <option value="sugar">Sugar Cone</option>
-                                    <option value="waffle">Waffle Cone</option>
-                                    <option value="dippedWaffle">Choclate Dipped Waffle Cone</option>
-                                </select>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Special:</legend>
-                                <label for="SpecialRequests">Special Requests:</label>
-                                <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="18" placeholder="Allergic to peanuts, substitutuions, etc."></textarea>
-                            </fieldset>
-                            <button type="button" onclick="alert('Free today for our Grand Opening!)">Calculate Cost</button>
-                            <button type="submit">Submit Order</button>
+                            <input type="checkbox" id="chicken wings" name="chicken wings" value="chicken wings">
+                            <label for="chicken wings">Chicken Wings</label>
+                            <div>
+                                <input type="checkbox" id="garlicbread" name="garlicbread"
+                                       value="garlicbread">
+                                <label for="garlicbread">Garlic Bread</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="cheesesticks" name="cheesesticks" value="cheesesticks">
+                                <label for="cheesesticks">Cheese Sticks</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="salad" name="salad" value="salad">
+                                <label for="salad">Salad</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="onionrings" name="onionrings" value="onionrings">
+                                <label for="onionrings">Onion Rings</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special:</legend>
+                        <label for="SpecialRequests">Special Requests:</label>
+                        <textarea id="SpecialRequests" name="SpecialRequests" rows="4" cols="18"
+                                  placeholder="chili flakes, parmesan, etc."></textarea>
+                    </fieldset>
+                    <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost
+                    </button>
+                    <button type="submit">Submit Order</button>
         </form>
     </div>
 </div>
